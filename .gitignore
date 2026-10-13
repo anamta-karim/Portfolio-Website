@@ -34,3 +34,15 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Workspace Specification & Planning Docs
+AGENTS.md
+ANTIGRAVITY_START_PROMPT.md
+APP_FLOW.md
+BACKEND_SCHEMA.md
+CONTENT_SOURCE_OF_TRUTH.md
+IMPLEMENTATION_PLAN.md
+PRD.md
+README_FIRST.md
+SPEC.md
+UI_UX_DESIGN_BRIEF.md
