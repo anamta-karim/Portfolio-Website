@@ -2,7 +2,7 @@
 
 # Anamta Karim ♐
 
-### An interactive, celestial portfolio guided by the Sagittarius constellation — built with React 19, TypeScript, and Vite.
+### An interactive, celestial portfolio guided by the Sagittarius constellation, built with React 19, TypeScript, and Vite.
 
 ![React](https://img.shields.io/badge/React-19-61DAFB.svg?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue.svg?logo=typescript&logoColor=white)
@@ -18,7 +18,9 @@
 
 ## About This Project
 
-I built this website to bring together my projects, research, and technical journey in one interactive space. Rather than a standard list of links and resumes, I wanted visitors to explore my professional life through a celestial lens—anchored by the Sagittarius constellation (my sun sign) as an artistic and visual guide across each chapter of my learning and engineering.
+I built this website to bring together my projects, research, and technical journey in one interactive space. Rather than a standard list of links and resumes, I wanted visitors to explore my professional life through a celestial lens.
+
+Born under Sagittarius, I chose the archer constellation as the visual atlas for this site, a personal nod to relentless curiosity, aiming for depth, and navigating uncharted territory in software and machine learning.
 
 ---
 
