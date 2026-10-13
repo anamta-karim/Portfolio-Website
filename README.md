@@ -1,6 +1,6 @@
 <div align="center">
 
-# Anamta Karim ♐
+# Anamta Karim
 
 ### An interactive, celestial portfolio guided by the Sagittarius constellation, built with React 19, TypeScript, and Vite.
 
