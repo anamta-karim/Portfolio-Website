@@ -16,8 +16,6 @@
 
 ---
 
-## In plain English
-
 Most developer portfolios look identical: generic dark-mode templates, arbitrary skill progress bars, and fabricated metrics. 
 
 This website is built differently. It combines real-world software engineering with an intentional **celestial digital-art aesthetic** inspired by the **Sagittarius constellation**:
