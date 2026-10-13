@@ -16,19 +16,6 @@
 
 ---
 
-Most developer portfolios look identical: generic dark-mode templates, arbitrary skill progress bars, and fabricated metrics. 
-
-This website is built differently. It combines real-world software engineering with an intentional **celestial digital-art aesthetic** inspired by the **Sagittarius constellation**:
-
-1. **The landing experience** presents an interactive Sagittarius Star-Atlas observatory. Seven primary navigation stars map directly to the seven main sections of the portfolio.
-2. **Dual-mode navigation:** Clicking any star glides smoothly to that section, while a compact sticky sidebar star-atlas activates on the left for continuous orientation. Conventional accessible top navigation and a mobile drawer remain available at all times.
-3. **100% Vector SVG digital art:** No blurry raster galaxy backgrounds. The cosmic backdrop, sweeping nebula ribbons, diffraction flares, mountain silhouettes, and observatory arches are sharp, resolution-independent SVGs rendered natively in CSS and React.
-4. **Honest by design:** Every project claim is grounded in evidence. SkinWise is clearly labeled as an informational screening aid rather than a medical tool; PassOn notes where public demo storage is mocked vs. its full serverless repository backend; in-progress research (~50%) and early concepts (~10%) are transparently marked.
-
-> ♐ **Why Sagittarius?** The celestial motif is a quiet personal nod to my sun sign, woven into the site as an authentic artistic atlas.
-
----
-
 ## Table of contents
 - [What this project demonstrates](#what-this-project-demonstrates)
 - [The 7 Sections](#the-7-sections)
