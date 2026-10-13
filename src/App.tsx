@@ -17,6 +17,7 @@ import {
 } from './components/PortfolioSections';
 import { PRIMARY_STARS } from './data/portfolioData';
 import { SectionId } from './types/portfolio';
+import { Analytics } from '@vercel/analytics/react';
 
 const VALID_SECTIONS = new Set<SectionId>(PRIMARY_STARS.map((s) => s.id));
 
@@ -114,6 +115,7 @@ export const App: React.FC = () => {
       </div>
 
       <Footer />
+      <Analytics />
     </div>
   );
 };
