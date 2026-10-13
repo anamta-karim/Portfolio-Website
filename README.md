@@ -10,36 +10,25 @@
 ![Tests](https://img.shields.io/badge/tests-8%20passed-brightgreen.svg)
 ![Deployment](https://img.shields.io/badge/deployed-Vercel-black.svg?logo=vercel&logoColor=white)
 
-[🌐 **Visit Live Site**](https://anamta-karim.vercel.app)  ·  [The 7 Sections](#the-7-sections)  ·  [Architecture](#architecture)  ·  [Getting Started](#getting-started)
+[🌐 **Visit Live Site**](https://anamta-karim.vercel.app)  ·  [The 7 Sections](#the-7-sections)  ·  [Architecture](#architecture--how-it-works)  ·  [Tech Stack](#tech-stack)
 
 </div>
 
 ---
 
-## Table of contents
-- [What this project demonstrates](#what-this-project-demonstrates)
-- [The 7 Sections](#the-7-sections)
-- [Architecture & How it works](#architecture--how-it-works)
-- [Honest by design](#honest-by-design)
-- [Tech stack](#tech-stack)
-- [Getting started](#getting-started)
-- [Project structure](#project-structure)
-- [Engineering challenges & lessons learned](#engineering-challenges--lessons-learned)
-- [Deployment](#deployment)
+## About This Project
+
+I built this website to bring together my projects, research, and technical journey in one interactive space. Rather than a standard list of links and resumes, I wanted visitors to explore my professional life through a celestial lens—anchored by the Sagittarius constellation (my sun sign) as an artistic and visual guide across each chapter of my learning and engineering.
 
 ---
 
-## What this project demonstrates
-
-| Area | What was built |
-|---|---|
-| **Component Architecture** | Modular React 19 + TypeScript architecture with strict typing, clean props interfaces, and complete separation between data ([`src/data/portfolioData.ts`](./src/data/portfolioData.ts)) and UI |
-| **Vector Celestial Art** | Infinite-resolution SVG digital art backdrop with metallic ice-blue (`#9EDCFF`) and cosmic-violet (`#C5A9FF`) nebula bands, diffraction flares, and starlight lake reflections |
-| **Dual-Mode Navigation** | Interactive 7-star Sagittarius SVG asterism with hover/click ripple telemetry, backed by a compact sticky Star-Atlas sidebar and a mobile drawer |
-| **Accessibility (a11y)** | Keyboard navigable (`Tab` + `Enter`), visible focus rings, ARIA landmark roles, semantic heading hierarchy, and zero reliance on hover-only interactions |
-| **Resilient Asset Handling** | Real project screenshots bundled via Vite module assets, dynamic multi-extension certificate detector (`.pdf`, `.png`, `.jpg`), and an accessible fallback dialog for resume requests |
-| **Content Integrity** | Accurate project completion percentages, verified evidence metrics (pytest unit checks), and honest caveats across every system |
-| **Automated Testing** | 8 Vitest + React Testing Library integration tests verifying routing, keyboard escape, domain filtering, caveats, and accessible modal behavior |
+## Table of contents
+- [About This Project](#about-this-project)
+- [The 7 Sections](#the-7-sections)
+- [Architecture & How it works](#architecture--how-it-works)
+- [Tech stack](#tech-stack)
+- [Project structure](#project-structure)
+- [Deployment](#deployment)
 
 ---
 
@@ -55,7 +44,7 @@ The seven major stars of the Sagittarius asterism guide you through seven chapte
 | **04 · Kaus Australis** | **Experience & Leadership** | Practical data analytics training (Deloitte virtual simulation) and student leadership (Vice-President of Ignite Community, Joint Secretary at Aarambh’25) |
 | **05 · Arkab** | **Achievements & Programs** | Technical training milestones (ISRO/IIRS Geodata, McKinsey Forward, Google Cloud Agentic AI, CodeWithHarry), Reliance Foundation Scholar, SIH 2025, and direct certificate links |
 | **06 · Rukbat** | **Research & Learning** | Ongoing LoRA-adapted Vision-Language Model pipeline for retinal clinical report generation under a 4GB GPU budget, plus applied engineering notes |
-| **07 · Alnasl** | **Contact** | Direct contact channels (Email, GitHub, LinkedIn) and verifiable curriculum vitae request modal |
+| **07 · Alnasl** | **Contact** | Direct contact channels (Email, GitHub, LinkedIn) and curriculum vitae request modal |
 
 ---
 
@@ -96,19 +85,6 @@ sequenceDiagram
 
 ---
 
-## Honest by design
-
-A professional portfolio must be truthful. This project enforces strict content guardrails:
-
-- **SkinWise:** Clearly presented as an informational screening aid, not a medical diagnostic tool. An ingredient list alone does not establish clinical safety or individual dermatological suitability.
-- **PassOn:** Explicitly clarifies that while the frontend is deployed live on AWS Amplify, persistent database CRUD and authentication are mocked in the public demo so visitors can test workflows without modifying shared data.
-- **Retinal VLM Pipeline:** Honestly marked as an in-progress research exploration (~50% complete) focused on quantization setup and PEFT/LoRA engineering, with no fabricated clinical metrics.
-- **Financial Risk Engine:** Transparently labeled as an early-stage concept (~10% complete, currently on hold) rather than a completed flagship system.
-- **Deloitte Simulation:** Accurately classified as a self-paced virtual job simulation on Forage, not employment.
-- **Scholarships & Awards:** Reliance Foundation Undergraduate Scholar recognition is stated accurately without invented figures.
-
----
-
 ## Tech stack
 
 | Layer | Technology | Rationale |
@@ -120,38 +96,6 @@ A professional portfolio must be truthful. This project enforces strict content 
 | **Testing** | Vitest 3.0 + Testing Library | Fast, lightweight integration and unit test suite |
 | **Analytics** | `@vercel/analytics` | Privacy-friendly, cookieless traffic telemetry |
 | **Hosting** | Vercel Edge Network | Global CDN caching with instant automated git deployments |
-
----
-
-## Getting started
-
-### Prerequisites
-- **Node.js:** `v20.x` or `v22.x`
-- **npm:** `v10.x`+
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/anamta-karim/Portfolio-Website.git
-cd Portfolio-Website
-
-# 2. Install dependencies
-npm install
-
-# 3. Start local development server
-npm run dev
-
-# 4. Run unit and integration tests
-npm run test
-
-# 5. Run ESLint code quality checks
-npm run lint
-
-# 6. Build production bundle
-npm run build
-
-# 7. Preview production build locally
-npm run preview
-```
 
 ---
 
@@ -192,18 +136,6 @@ Portfolio-Website/
 ├── tsconfig.json
 └── vite.config.ts
 ```
-
----
-
-## Engineering challenges & lessons learned
-
-| Challenge | Solution |
-|---|---|
-| **Blurry raster backgrounds on Retina/4K displays** | Replaced stretched raster space photos with 100% vector SVG digital art (`CelestialBackdrop.tsx`). Renders sharp at any screen resolution with near-zero bundle impact. |
-| **Constellation navigation usability on mobile** | SVG click targets can be difficult to tap on small mobile screens. Added a dedicated horizontal quick-jump chip strip and a slide-down list drawer with touch targets exceeding 44px. |
-| **Preventing image flash on missing assets** | Built a dynamic screenshot loader in `ProjectCard.tsx` that bundles real images directly via Vite module assets, falling back gracefully to SVG architectural diagrams if missing. |
-| **Windows file-locking during dev asset additions** | Resolved Vite static-server directory indexing behavior on Windows by serving screenshots directly through the Vite module pipeline (`src/assets/projects/`). |
-| **Ensuring zero broken links** | Designed `ResumeButton.tsx` and certificate links with fallback state: clicking an asset checks file presence first; if absent, an accessible modal opens offering a direct email request. |
 
 ---
 
